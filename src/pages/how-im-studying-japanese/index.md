@@ -28,11 +28,11 @@ Watching anime or dramas helps with your listening and helps you to understand J
 
 Reading will help you strengthen your vocabulary and grammar knowledge. I think it’s important to read both manga and novels. In Japanese, there is a massive difference between written and spoken language. The difference between manga and novels distinctly highlight it and it is very useful to know this especially if you’re going for the JLPT qualifications.
 
-![The Nihongo So Matome Series, my JLPT textbook of choice](./nihongo-so-matome.jpg)
+![The Nihongo So Matome Series, my JLPT textbook of choice](//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B079XZXT5X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=kmanjp-20)
 
 ### JLPT Textbooks
 
-Whilst I have been studying Japanese, I have been taking the JLPT to give myself an aim so I can continue improving. I have bought textbooks to help study for the exams. Not only are these useful for passing exams, I personally feel they help fill the blanks with discovering common words you may have not come across yet in your studies. The grammar points that you need to know for the JLPT are split between written and spoken Japanese. I personally use the [Nihongo So Matome series](https://www.tofugu.com/reviews/nihongo-so-matome/) as my JLPT textbook of choice.
+Whilst I have been studying Japanese, I have been taking the JLPT to give myself an aim so I can continue improving. I have bought textbooks to help study for the exams. Not only are these useful for passing exams, I personally feel they help fill the blanks with discovering common words you may have not come across yet in your studies. The grammar points that you need to know for the JLPT are split between written and spoken Japanese. I personally use the [Nihongo So Matome series](https://www.amazon.com/gp/product/B079XZXT5X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B079XZXT5X&linkCode=as2&tag=kmanjp-20&linkId=7d54a0521681e665cb5628519fcfc88e) as my JLPT textbook of choice.
 
 ![Tae Kim's Grammar guide really helped me over the years](./tae-kim.jpg)
 
@@ -50,7 +50,7 @@ In my day to day life, whilst reading or even talking I always seem to come acro
 
 ### [Wanikani](https://www.wanikani.com/)
 
-Kanji is the biggest bane for anybody with no experience reading Chinese characters. Kanji are the Chinese characters used in the Japanese language and there are 2000 commonly known kanji. I have tried many methods to learn kanji from continuously writing the character down until I remember to [Heisig’s Remembering the Kanji](https://www.amazon.com/Remembering-Kanji-Complete-Japanese-Characters/dp/0824835921) method. WaniKani is an application created by the people who own the Japanese blog [Tofugu](https://www.tofugu.com/). Kanji is presented in groups which contain similar patterns making it much easier to learn and more importantly remember. It also provides mnemonics  and present them to you in the best order for learning kanji. Unfortunately it’s not a free application but they do give a trial. I really recommend trying it out.
+Kanji is the biggest bane for anybody with no experience reading Chinese characters. Kanji are the Chinese characters used in the Japanese language and there are 2000 commonly known kanji. I have tried many methods to learn kanji from continuously writing the character down until I remember to [Heisig’s Remembering the Kanji](https://www.amazon.com/gp/product/0824835921/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0824835921&linkCode=as2&tag=kmanjp-20&linkId=84abb95b041d7af7bc21fbaf18698eb2) method. WaniKani is an application created by the people who own the Japanese blog [Tofugu](https://www.tofugu.com/). Kanji is presented in groups which contain similar patterns making it much easier to learn and more importantly remember. It also provides mnemonics  and present them to you in the best order for learning kanji. Unfortunately it’s not a free application but they do give a trial. I really recommend trying it out.
 
 ![A very good and thorough online Japanese dictionary](./jisho.png)
 
