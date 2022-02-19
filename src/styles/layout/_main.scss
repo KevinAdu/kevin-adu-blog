@@ -1,11 +1,12 @@
 main {
   margin: 0 auto;
   padding-bottom: 3rem;
-  max-width: 33rem;
+  max-width: 60vw;
 }
 
 @media (max-width: 450px) {
   main {
     margin: 0 1rem;
+    max-width: 90vw;
   }
 }
