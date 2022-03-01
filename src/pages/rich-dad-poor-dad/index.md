@@ -9,6 +9,8 @@ tags:
 - Book
 ---
 
+![The cover of Rich Dad Poor Dad](./richdadpoordad.jpg)
+
 Rich Dad Poor Dad is the book that got me back into reading funnily enough. Reading about a subject I knew little but interact with every day really kept me engrossed in the book. Also it is written where it is very easy to follow and pretty much explained in laymen terms. I believe this book is for people who want to improve their financial situation but instead of jumping into a solution such stocks immediately this book teaches you how to view, value, make and keep money. Just to warn you there are couple of issues, since the book was written a while ago it doesn't reflect today's society completely such as crypto currency etc. Also since the author is American, some terms will only be relevant to American citizens unless there is an equivalent for you. Other than I think the overall message is very important for everyone to understand.
 
 ### Quotes
