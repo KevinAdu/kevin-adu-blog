@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Ups and Downs
 lang: en
 date: 2018-07-25 20:06:49

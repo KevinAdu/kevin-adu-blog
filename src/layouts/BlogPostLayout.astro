@@ -1,0 +1,25 @@
+---
+import PostMetadata from '../components/PostMetadata.astro';
+import Layout from './Layout.astro';
+
+interface Props {frontmatter: {
+	title: string;
+	path: string;
+	date: string;
+  tags: string[];
+}}
+
+import data from "../data/siteMetaData.ts"
+const { frontmatter } = Astro.props;
+const formattedDate = new Date(Date.parse(frontmatter.date)).toDateString();
+---
+    
+<Layout title={`${frontmatter.title} | ${data.title}`}>
+  <main>
+    <article class="article">
+      <h2>{frontmatter.title}</h2>
+      <PostMetadata date={formattedDate} tags={frontmatter.tags} />
+      <slot />
+    </article>
+  </main>
+</Layout>

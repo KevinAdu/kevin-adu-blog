@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Living in the Moment
 lang: en
 date: 2019-01-14 17:30:00

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Suffering and Happiness
 lang: en
 date: 2018-06-18 21:01:49

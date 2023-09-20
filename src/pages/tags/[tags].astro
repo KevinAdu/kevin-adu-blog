@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import data from "../../data/siteMetaData.ts"
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../../pages/**/*.md');
+  const tagArray = [];
+  
+
+  posts.forEach(post => {
+    tagArray.push(post.frontmatter.tags);
+  });
+    
+  const tagSet = new Set(tagArray.flat());
+  const tags = Array.from(tagSet).sort();
+
+  return tags.map(tag => { return { params: { tags: tag.toLowerCase() }, props: { posts, tag }} })
+}
+const siteTitle = data.title;
+
+const { tag, posts } = Astro.props;
+const filteredPosts = posts.filter((post) => post.frontmatter.tags?.includes(tag));
+---
+
+<Layout title={`Posts tagged as "${tag}" | ${siteTitle}`}>
+  <main>
+    <h2>{tag}</h2>
+    {filteredPosts.map(post => {
+      return (
+        <div class="post-tag-listing">
+          <a href={post.frontmatter.path}>
+            <h3>{post.frontmatter.title}</h3>
+          </a>
+          <time>{post.frontmatter.date}</time>
+        </div>
+      );
+    })}
+  </main>
+</Layout>

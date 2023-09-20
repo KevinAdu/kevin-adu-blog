@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: 4 Years in Japan
 date: 2017-12-30 09:43:08
 path: "/four-years-in-japan/"

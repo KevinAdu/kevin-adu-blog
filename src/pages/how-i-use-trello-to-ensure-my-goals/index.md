@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: How I use Trello to ensure I achieve my goals
 lang: en
 date: 2022-01-26 17:30:00

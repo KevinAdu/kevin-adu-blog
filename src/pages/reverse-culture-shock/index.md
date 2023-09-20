@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Reverse Culture Shock
 date: 2016-02-08 20:53:47
 path: "/reverse-culture-shock/"

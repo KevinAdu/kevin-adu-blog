@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Rich Dad Poor Dad
 date: 2022-03-01 17:30:08
 path: "/rich-dad-poor-dad/"
