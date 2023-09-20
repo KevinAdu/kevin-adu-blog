@@ -1,0 +1,24 @@
+---
+interface Props {
+	date: string;
+  tags: string[];
+}
+import { format } from 'date-fns'
+import { Icon } from 'astro-icon';
+import TagList from './TagList.astro';
+const { tags, date } = Astro.props;
+---
+
+<div class="post-metadata">
+  <div class="post-date">
+    <Icon name="mdi:clock" />
+    <time>{date}</time>
+  </div>
+  <div class="post-tags">
+    <Icon name="mdi:tag" />
+    <ul><TagList tags={tags} /></ul>
+  </div>
+  <!-- <div class="post-comments">
+    <Icon name="mdi:comment" />
+  </div> -->
+</div>

@@ -1,0 +1,61 @@
+---
+interface Props {
+	title: string;
+}
+
+import '../styles/main.scss';
+import kebabCase from 'lodash.kebabcase';
+import { SEO } from 'astro-seo';
+
+const { title } = Astro.props;
+const posts = await Astro.glob('../pages/**/*.md');
+const categorySet = new Set();
+
+posts.forEach(post => {
+  categorySet.add(post.frontmatter.category);
+});
+
+const categories = Array.from(categorySet).sort();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<SEO  title={title} />
+	</head>
+	<body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="nav-hero">
+          <h1>Kevin Adu</h1>
+        </a>
+        <ul class="nav-links">
+          {categories.map(category => (
+            <a href={`/category/${kebabCase(category)}`}>
+              <li>{category}</li>
+            </a>
+          ))}
+          <a href="/about">
+            <li>About</li>
+          </a>
+          <a href="/rss.xml">
+            <li>RSS Feed</li>
+          </a>
+        </ul>
+      </nav>
+      <ul class="tagline">
+        <li>Expat in Japan</li>
+        <li>Web Developer</li>
+      </ul>
+    </header>
+		<slot />
+    <footer class="primary-footer">
+      <small>&copy; Copyright Kevin Adu {new Date().getFullYear()}</small>
+    </footer>
+	</body>
+</html>

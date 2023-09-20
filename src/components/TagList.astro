@@ -1,0 +1,13 @@
+---
+interface Props {
+  tags: string[];
+}
+const { tags } = Astro.props;
+import kebabCase from 'lodash.kebabcase';
+---
+
+{ tags.map(tag => <a href={`/tags/${kebabCase(tag)}`}>
+  <li>{tag}</li>
+</a>) }
+
+

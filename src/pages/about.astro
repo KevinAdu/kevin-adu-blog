@@ -1,0 +1,47 @@
+---
+import data from "../data/siteMetaData.ts"
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon';
+---
+
+<Layout title={`${data.title} | About`}>
+  <main>
+    <p>
+      Hello my name is Kevin Adu and I'm a web developer based in Yokohama, Japan and I'm
+      originally from London, England. I have been in Japan since December 2013 and I wanted a
+      way to convey my thoughts and ramblings of my experiences of living in Japan into a
+      blog. Mainly I write about what I experience here in Japan and how it is affects me. I
+      also sometimes write about the Japanese language and about web development too.
+    </p>
+    <p>
+      If you want to contact me outside of this blog or have a look at my open source
+      projects, you can do so via the links below:
+    </p>
+    <ul class="social-links">
+      <li>
+        <a href="https://twitter.com/Kevin__Adu">
+          <Icon name="mdi:Twitter" />
+          <small>Twitter</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/kevinadu89/">
+          <Icon name="mdi:Instagram" />
+          <small>Instagram</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/KevinAdu">
+          <Icon name="mdi:Github" />
+          <small>Github</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://codepen.io/KevinAdu/">
+          <Icon name="mdi:Codepen" />
+          <small>Codepen</small>
+        </a>
+      </li>
+    </ul>
+  </main>
+</Layout>

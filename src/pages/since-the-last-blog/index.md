@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Since the last blog
 date: 2016-01-24 23:06:08
 path: "/since-the-last-blog/"

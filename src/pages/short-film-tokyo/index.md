@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Short Film - Tokyo 21st October
 date: 2018-04-23 22:30:08
 path: "/short-film-tokyo/"

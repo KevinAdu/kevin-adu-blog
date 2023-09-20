@@ -1,7 +1,8 @@
 ---
-title: How I'm studying Japanese
+layout: ../../layouts/BlogPostLayout.astro
+title: Phrases when visiting Japan
 date: 2018-01-30 21:49:08
-path: "/how-im-studying-japanese/"
+path: "/phrases-when-visiting-japan/"
 category: Japanese
 tags:
 - Study
