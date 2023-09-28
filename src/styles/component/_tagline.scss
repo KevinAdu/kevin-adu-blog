@@ -1,5 +1,6 @@
 .tagline {
   margin: 0;
+  margin-left: 2rem;
   padding: 0;
   display: flex;
   font-family: $header-font-family;
@@ -16,5 +17,11 @@
     &:first-child {
       margin-right: 1rem;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .tagline{
+    margin: 0;
   }
 }

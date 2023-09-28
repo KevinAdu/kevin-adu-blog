@@ -39,22 +39,22 @@ const categories = Array.from(categorySet).sort();
   </script>
 	<body>
     <header>
+      <a href="/" class="header-logo">
+        <h1>Kevin Adu</h1>
+      </a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
       <nav class="nav">
-        <a href="/" class="nav-hero">
-          <h1>Kevin Adu</h1>
-        </a>
         <ul class="nav-links">
           {categories.map(category => (
-            <a href={`/category/${kebabCase(category)}`}>
-              <li>{category}</li>
-            </a>
+            <li><a href={`/category/${kebabCase(category)}`}>
+              {category}
+            </a></li>
           ))}
-          <a href="/about">
-            <li>About</li>
-          </a>
-          <a href="/rss.xml">
-            <li>RSS Feed</li>
-          </a>
+          <li><a href="/about">
+            About
+          </a></li>
         </ul>
       </nav>
       <ul class="tagline">

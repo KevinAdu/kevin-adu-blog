@@ -5,7 +5,7 @@
 
 @media (max-width: 450px) {
   .post-metadata {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
