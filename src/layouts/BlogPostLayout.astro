@@ -10,6 +10,7 @@ interface Props {frontmatter: {
 }}
 
 import data from "../data/siteMetaData.ts"
+import Comments from '../components/Comments';
 const { frontmatter } = Astro.props;
 const formattedDate = new Date(Date.parse(frontmatter.date)).toDateString();
 ---
@@ -21,5 +22,6 @@ const formattedDate = new Date(Date.parse(frontmatter.date)).toDateString();
       <PostMetadata date={formattedDate} tags={frontmatter.tags} />
       <slot />
     </article>
+    <Comments client:idle />
   </main>
 </Layout>
