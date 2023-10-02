@@ -1,17 +1,19 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import data from "../../data/siteMetaData.ts"
+import data from '../../data/siteMetaData.ts';
 import kebabCase from 'lodash.kebabcase';
 
 export async function getStaticPaths() {
   const posts = await Astro.glob('../../pages/**/*.md');
   const categorySet = new Set();
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     categorySet.add(post.frontmatter.category);
   });
   const categories = Array.from(categorySet).sort();
-  return categories.map(category => { return { params: { category: kebabCase(category) }, props: { posts, category }} })
+  return categories.map((category) => {
+    return { params: { category: kebabCase(category) }, props: { posts, category } };
+  });
 }
 const siteTitle = data.title;
 
@@ -20,23 +22,22 @@ const { category, posts } = Astro.props;
 console.log(posts[0].frontmatter, category);
 
 const filteredPosts = posts.filter((post) => post.frontmatter.category === category);
-
 ---
+
 <Layout title={`Category - "${category}" | ${siteTitle}`}>
   <main>
     <h2>{category}</h2>
-    {filteredPosts.map(post => {
-      return (
-        <div class="post-tag-listing">
-          <a href={post.frontmatter.path}>
-            <h3>{post.frontmatter.title}</h3>
-          </a>
-          <time>{post.frontmatter.date}</time>
-        </div>
-      );
-    })}
+    {
+      filteredPosts.map((post) => {
+        return (
+          <div class="post-tag-listing">
+            <a href={post.frontmatter.path}>
+              <h3>{post.frontmatter.title}</h3>
+            </a>
+            <time>{post.frontmatter.date}</time>
+          </div>
+        );
+      })
+    }
   </main>
 </Layout>
-
-
-
