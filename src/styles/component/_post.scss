@@ -26,21 +26,18 @@
 }
 
 .post-tags {
-  > ul {
+  ul {
     padding: 0;
     margin: 0;
-    display: inline-block;
+    display: inline-flex;
+    list-style: none;
 
     a {
+      display: inline-block;
+      margin-right: 0.45rem;
       &:not(:last-child):after {
-        content: ",";
-        margin-right: 0.45rem;
+        content: ",";  
       }
-    }
-
-    li {
-      display: inline;
-      list-style: none;
     }
   }
 }

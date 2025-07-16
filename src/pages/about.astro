@@ -3,7 +3,9 @@ import data from "../data/siteMetaData.ts"
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components';
 ---
-
+<style lang="scss">
+  @use "../styles/main.scss"
+</style>
 <Layout title={`${data.title} | About`}>
   <main>
     <p>

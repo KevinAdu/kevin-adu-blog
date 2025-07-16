@@ -22,7 +22,9 @@ const siteTitle = data.title;
 const { tag, posts } = Astro.props;
 const filteredPosts = posts.filter((post) => post.frontmatter.tags?.includes(tag));
 ---
-
+<style lang="scss">
+  @use "../../styles/main.scss"
+</style>
 <Layout title={`Posts tagged as "${tag}" | ${siteTitle}`}>
   <main>
     <h2>{tag}</h2>

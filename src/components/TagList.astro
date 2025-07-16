@@ -5,7 +5,9 @@ interface Props {
 const { tags } = Astro.props;
 import kebabCase from 'lodash.kebabcase';
 ---
-
+<style lang="scss">
+  @use "../styles/main.scss"
+</style>
 { tags.map(tag => <a href={`/tags/${kebabCase(tag)}`}>
   <li>{tag}</li>
 </a>) }
