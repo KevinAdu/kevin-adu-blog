@@ -3,7 +3,6 @@ interface Props {
 	title: string;
 }
 
-import '../styles/main.scss';
 import kebabCase from 'lodash.kebabcase';
 import { SEO } from 'astro-seo';
 
@@ -18,8 +17,12 @@ for (const path in posts) {
 }
 
 const categories = Array.from(categorySet).sort();
----
 
+
+---
+<style lang="scss">
+  @use "../styles/main.scss"
+  </style>
 <!doctype html>
 <html lang="en">
 	<head>
