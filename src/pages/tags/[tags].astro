@@ -3,13 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 import data from "../../data/siteMetaData.ts"
 
 export async function getStaticPaths() {
-  const posts = await import.meta.glob('../../pages/**/*.md');
+  const posts = import.meta.glob('../../pages/**/*.md');
   const tagArray = [];
   
-
-  posts.forEach(post => {
-    tagArray.push(post.frontmatter.tags);
-  });
+  for (const path in posts) {
+    posts[path]().then((post) => {
+      tagArray.push(post.frontmatter.tags);
+    })
+  }
     
   const tagSet = new Set(tagArray.flat());
   const tags = Array.from(tagSet).sort();
