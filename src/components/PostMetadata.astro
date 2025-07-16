@@ -7,7 +7,9 @@ import { Icon } from 'astro-icon/components';
 import TagList from './TagList.astro';
 const { tags, date } = Astro.props;
 ---
-
+<style lang="scss">
+  @use "../styles/main.scss"
+</style>
 <div class="post-metadata">
   <div class="post-date">
     <Icon name="mdi:clock" />
