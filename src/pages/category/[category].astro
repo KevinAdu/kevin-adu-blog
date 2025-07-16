@@ -4,12 +4,14 @@ import data from '../../data/siteMetaData.ts';
 import kebabCase from 'lodash.kebabcase';
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('../../pages/**/*.md');
+  const posts = await import.meta.glob('../../pages/**/*.md');
   const categorySet = new Set();
 
-  posts.forEach((post) => {
+  for (const path in posts) {
+  posts[path]().then((post) => {
     categorySet.add(post.frontmatter.category);
-  });
+  })
+}
   const categories = Array.from(categorySet).sort();
   return categories.map((category) => {
     return { params: { category: kebabCase(category) }, props: { posts, category } };

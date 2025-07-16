@@ -8,12 +8,14 @@ import kebabCase from 'lodash.kebabcase';
 import { SEO } from 'astro-seo';
 
 const { title } = Astro.props;
-const posts = await Astro.glob('../pages/**/*.md');
+const posts = import.meta.glob('../pages/**/*.md');
 const categorySet = new Set();
 
-posts.forEach(post => {
-  categorySet.add(post.frontmatter.category);
-});
+for (const path in posts) {
+  posts[path]().then((post) => {
+    categorySet.add(post.frontmatter.category);
+  })
+}
 
 const categories = Array.from(categorySet).sort();
 ---

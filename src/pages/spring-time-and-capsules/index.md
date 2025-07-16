@@ -12,8 +12,6 @@ lang: en
 
 I personally love spring in Japan. The temperature starts to get warmer, everyone is a lot more lively and the beautiful cherry blossoms begin to appear. Back in the UK, I didn’t really feel excited when spring came, I just knew that I would be getting some [chocolate easter eggs](http://www.theguardian.com/lifeandstyle/2016/mar/09/easter-eggs-2016-best-worst-taste-test-chocolate) and my brothers would be home from school. In Japan, it feels very different. Mainly because you can see it in the nature with the blooming of the sakura blossoms and other flowers.
 
-<!--more-->
-
 > university students getting wasted just before they start their careers.
 
 Spring officially starts with the national holiday Shunbun no Hi (春分の日) or better known as the [March Equinox day](http://www.telegraph.co.uk/news/uknews/12199262/The-first-day-of-spring.-The-Vernal-Equinox-Everything-you-need-to-know.html). Scientifically speaking, this is the time when the Sun leaves the southern hemisphere and crosses the equator. In other words, in the northern hemisphere starts to get warmer whereas the southern hemisphere starts to get colder. Not only does the weather start to change, but so does the school year. In Japan, the school year starts in the beginning of April. Just before then, it tends to get pretty crowded with the influx of students. Especially in the [izakayas](http://japan-magazine.jnto.go.jp/en/1202_izakaya.html), with all the newly graduated university students getting wasted just before they start their careers.

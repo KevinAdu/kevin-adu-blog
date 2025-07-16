@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import data from "../../data/siteMetaData.ts"
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('../../pages/**/*.md');
+  const posts = await import.meta.glob('../../pages/**/*.md');
   const tagArray = [];
   
 

@@ -1,35 +1,50 @@
 ---
-import PostExcerpt, {PropRenderer} from '@igor.dvlpr/astro-post-excerpt'
-import data from "../data/siteMetaData.ts"
+import PostExcerpt from '@igor.dvlpr/astro-post-excerpt';
+import data from "../data/siteMetaData.ts";
 import PostMetadata from '../components/PostMetadata.astro';
 import Layout from '../layouts/Layout.astro';
 const siteTitle = data.title;
-const posts = await Astro.glob('../pages/**/*.md');
+const postImporters = Object.values(import.meta.glob('../pages/**/*.md'));
+const posts = await Promise.all(postImporters.map(fn => fn()));
 
+// Define the expected post type
+interface PostFrontmatter {
+  date: string;
+  tags: string[];
+  title: string;
+  path: string;
+}
+interface Post {
+  frontmatter: PostFrontmatter;
+  url?: string;
+}
 ---
 <Layout title={siteTitle}>
   <main>
-    {posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)).map(post => {
-      if (post.url !== '/404/') {
-        const tags = post.frontmatter.tags;
-        const formattedDate = new Date(Date.parse(post.frontmatter.date)).toDateString();
+    {(posts as Post[])
+      .sort((a, b) => Date.parse(a.frontmatter.date) - Date.parse(b.frontmatter.date))
+      .map(post => {
+        const typedPost = post as Post;
+        if (typedPost.url !== '/404/') {
+          const tags = typedPost.frontmatter.tags;
+          const formattedDate = new Date(Date.parse(typedPost.frontmatter.date)).toDateString();
 
-        return (
-          <article class="post">
-            <a class="post-title" href={post.frontmatter.path}>
-              <h2>{post.frontmatter.title}</h2>
-            </a>
-            <PostMetadata
-              date={formattedDate}
-              tags={tags}
-            />
-            <p>
-            <PostExcerpt post={post} words={20} addEllipsis renderer={PropRenderer.Hybrid}/>
-          </p>
-            <a href={post.frontmatter.path}>Read More</a>
-          </article>
-        );
-      }
-    })}
+          return (
+            <article class="post">
+              <a class="post-title" href={typedPost.frontmatter.path}>
+                <h2>{typedPost.frontmatter.title}</h2>
+              </a>
+              <PostMetadata
+                date={formattedDate}
+                tags={tags}
+              />
+              <p>
+                <PostExcerpt post={typedPost} words={20} addEllipsis={true}/>
+              </p>
+              <a href={typedPost.frontmatter.path}>Read More</a>
+            </article>
+          );
+        }
+      })}
   </main>
 </Layout>
