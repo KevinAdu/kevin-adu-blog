@@ -14,7 +14,9 @@ import Comments from '../components/Comments';
 const { frontmatter } = Astro.props;
 const formattedDate = new Date(Date.parse(frontmatter.date)).toDateString();
 ---
-    
+<style lang="scss">
+  @use "../styles/main.scss"
+</style>    
 <Layout title={`${frontmatter.title} | ${data.title}`}>
   <main>
     <article class="article">
