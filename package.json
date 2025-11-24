@@ -16,7 +16,7 @@
     "@giscus/react": "^2.3.0",
     "@iconify-json/mdi": "^1.1.68",
     "@iconify/json": "^2.2.239",
-    "@sentry/astro": "^10.15.0",
+    "@sentry/astro": "^10.27.0",
     "@types/react-dom": "^18.2.8",
     "astro": "^5.15.9",
     "astro-icon": "^1.1.5",
